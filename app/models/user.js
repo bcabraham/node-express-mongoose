@@ -2,7 +2,7 @@
  * Module dependencies
  */
 
-const mongoose = require('mongoose');
+const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
 /**
@@ -10,10 +10,10 @@ const Schema = mongoose.Schema;
  */
 
 const UserSchema = new Schema({
-  name: { type: String, default: '' },
-  email: { type: String, default: '' },
-  hashed_password: { type: String, default: '' },
-  salt: { type: String, default: '' }
+  name: { type: String, default: "" },
+  email: { type: String, default: "" },
+  hashed_password: { type: String, default: "" },
+  salt: { type: String, default: "" }
 });
 
 /**
@@ -39,4 +39,4 @@ UserSchema.static({});
  * Register
  */
 
-mongoose.model('User', UserSchema);
+mongoose.model("User", UserSchema);
